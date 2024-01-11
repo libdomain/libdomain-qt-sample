@@ -10,7 +10,7 @@
 Для компиляции программы вам необходимо установить библиотеку libdomain.
 
 ```bash
-apt-get install libdomain-devel libconfig-devel cmake rpm-build qt5-base-devel
+apt-get install libdomain-devel libconfig-devel cmake rpm-build qt5-base-devel glib2-devel
 ```
 
 Клонируйте пример:

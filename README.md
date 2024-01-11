@@ -10,7 +10,7 @@ The program establishes a connection to the LDAP server and executes a search re
 To compile the program, you need to install the libdomain library.
 
 ```bash
-apt-get install libdomain-devel libconfig-devel cmake rpm-build qt5-base-devel
+apt-get install libdomain-devel libconfig-devel cmake rpm-build qt5-base-devel glib2-devel
 ```
 
 Clone the example:
