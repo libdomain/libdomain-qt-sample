@@ -22,7 +22,7 @@ git clone https://github.com/libdomain/libdomain-qt-sample
 Используйте следующую команду компиляции:
 
 ```bash
-mkdir build && cd build && cmake .. && make -j `nproc`
+cd libdomain-qt-sample && mkdir build && cd build && cmake .. && make -j `nproc`
 ```
 
 ## Использование
