@@ -1,6 +1,8 @@
 #include "connectiondialog.h"
 #include "./ui_connectiondialog.h"
 
+#include <QToolTip>
+
 ConnectionDialog::ConnectionDialog(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::ConnectionDialog())
