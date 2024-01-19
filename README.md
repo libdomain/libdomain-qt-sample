@@ -10,7 +10,7 @@ The program establishes a connection to the LDAP server and executes a search re
 To compile the program, you need to install the libdomain library.
 
 ```bash
-# apt-get install libdomain-devel libconfig-devel cmake rpm-build qt5-base-devel glib2-devel
+# apt-get install libdomain-devel libconfig-devel cmake rpm-build qt5-base-devel glib2-devel krb5-kinit
 ```
 
 Clone the example:
@@ -46,6 +46,12 @@ Be sure to provide valid connection cridentials e.g. username and password.
 Samba and Windows Active Directory may support kerberos authentication depending on configuration.
 If server supports GSSAPI and kerberos be sure to select "Interactive bind/SASL/GSSAPI" checkbox.
 You also need to generate kerberos ticket in this case.
+
+To generate kerberos ticket you may need to run `kinit` command:
+```bash
+kinit administrator@example.org
+```
+Adjust username and domain name according to your LDAP server setup.
 
 To launch an application from libdomain-qt-sample directory run following command.
 
