@@ -59,7 +59,7 @@ kinit administrator@example.org
 Чтобы запустить приложение из директории libdomain-qt-sample, выполните следующую команду:
 
 ```bash
-$ cd build && ./libdomain-qt-sample
+$ cd build && ./libdomain-qt-test
 ```
 
 ### Диалог подключения к серверу
