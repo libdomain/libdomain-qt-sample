@@ -56,7 +56,7 @@ Adjust username and domain name according to your LDAP server setup.
 To launch an application from libdomain-qt-sample directory run following command.
 
 ```bash
-$ cd build && ./libdomain-qt-sample
+$ cd build && ./libdomain-qt-test
 ```
 
 ### Connection dialog
