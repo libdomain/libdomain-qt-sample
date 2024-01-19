@@ -10,7 +10,7 @@
 Для компиляции программы вам необходимо установить библиотеку libdomain.
 
 ```bash
-apt-get install libdomain-devel libconfig-devel cmake rpm-build qt5-base-devel glib2-devel
+apt-get install libdomain-devel libconfig-devel cmake rpm-build qt5-base-devel glib2-devel krb5-kinit
 ```
 
 Клонируйте пример:
@@ -47,6 +47,14 @@ cd libdomain-qt-sample && mkdir build && cd build && cmake .. && make -j `nproc`
 Samba и Windows Active Directory могут поддерживать аутентификацию Kerberos в зависимости от конфигурации. 
 Если сервер поддерживает GSSAPI и Kerberos, убедитесь, что вы выбираете флажок "Interactive bind/SASL/GSSAPI". 
 В этом случае вам также может потребоваться сгенерировать билет Kerberos.
+
+Чтобы сгенерировать билет kerberos, вам может потребоваться выполнить команду init:
+
+```bash
+kinit administrator@example.org
+```
+
+Измените имя пользователя и доменное имя в соответствии с настройками вашего сервера LDAP.
 
 Чтобы запустить приложение из директории libdomain-qt-sample, выполните следующую команду:
 
